@@ -1,0 +1,98 @@
+<head>
+    <meta charset="UTF-8">
+    <title>ТРИЦР 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div> Дашевский Сергей | Вариант № 91287 | P33212 </div>
+    </header>
+	
+	<div class = "twoBlocks">
+		<div class="block">
+			<img src="area.png" id="area" alt="Задание">
+			<form action="main.php" method="post" id="check">
+			
+				<div class = "twoBlocks">
+					<div class="block chooseBox">
+						Выберите X:
+					</div>
+					<div class="block chooseBox max">
+						<select name="X">
+							<option value="-5">-5</option>
+							<option value="-4">-4</option>
+							<option value="-3">-3</option>
+							<option value="-2">-2</option>
+							<option value="-1">-1</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">-2</option>
+						</select>
+
+					</div>
+				</div>
+
+				<div class = "twoBlocks">
+					<div class="block chooseBox">
+						Введите Y:
+					</div>
+					<div class="block chooseBox max">
+						<input type="text" name="Y">
+					</div>
+				</div>
+
+				<div class = "twoBlocks">
+					<div class="block chooseBox">
+						Выберите R:
+					</div>
+					<div class="block chooseBox max">
+						<label>
+							<input type="radio" name="R" value="1">1
+						</label>
+						<label>
+							<input type="radio" name="R" value="2">2
+						</label>
+						<label>
+							<input type="radio" name="R" value="3">3
+						</label>
+						<label>
+							<input type="radio" name="R" value="4">4
+						</label>
+						<label>
+							<input type="radio" name="R" value="5">5
+						</label>
+					</div>
+				</div>
+
+
+				<button id="submit" type="submit">Проверить</button>
+				<button id="reset" type="button">Сброс</button>
+
+
+				<p class="error" id="xError"></p>
+				<p class="error" id="yError"></p>
+				<p class="error" id="rError"></p>
+			</form>
+		</div>
+
+		<div class="block max">
+			<div class="tableBox">
+				<table id="resultTable">
+					<tr id="tableHeader">
+						<th>X</th><th>Y</th><th>R</th>
+						<th>Результат</th>
+						<th>Текущее время</th>
+						<th>Время работы скрипта</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

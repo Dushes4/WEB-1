@@ -1,0 +1,85 @@
+body {
+    background: #1c1c1c;
+	margin: 0px;
+	color: white;
+	font-weight: bold;
+	font-family: Calibri;
+}
+
+header {
+	background: #4d4d4d;
+}
+
+
+header div {
+	padding: 30px;
+    font-family: sans-serif;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.twoBlocks {
+	display: flex;
+
+}
+
+.block {
+	display: block;
+	border: 1px solid white;
+	width: 40%;
+}
+
+.block.max {
+	flex: 1;
+	margin-left: -1px;
+}
+
+.chooseBox {
+	width: 20%;
+	padding: 8px;
+	border: 0;
+}
+
+.tableBox {
+	margin: 8px auto;
+	display: block;
+}
+
+
+#submit, #reset {
+	margin: 8px auto;
+	width: 100px;
+	display: block;
+}
+
+
+#area {
+	width: 70%;
+    margin: 20px 15%;
+}
+
+
+#resultTable {
+    width: 70%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 3px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+	background: #262626;
+	width: 11.66%;
+}
+
+th {
+	font-weight: normal;
+}
+
+.error {
+    color: red;
+	text-align: center;
+}
